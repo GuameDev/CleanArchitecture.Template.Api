@@ -27,7 +27,7 @@ namespace CleanArchitecture.Template.Api
 
             var app = builder.Build();
 
-            app.UseStaticFiles();
+            app.MapStaticAssets();
 
             app.UseSerilogRequestLogging(options => options.IncludeQueryInRequestPath = true);
 
